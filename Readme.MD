@@ -3,13 +3,13 @@
  web portal Edukasi dan Peduli Lingkungan Kampus
 Website untuk lomba web design dengan tema lingkungan kampus.
 
-# anggota tim
+## anggota tim
 
 1.Faqih ahmad fawaiz(ketua tim)
 2.Asep ferdiansyah fahrurroji
 3.Nanang kurni tsani
 
-# deskripsi
+## deskripsi
 
 home: menu awal
 about: tentang kami
