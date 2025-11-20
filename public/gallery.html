@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery -portal edukasi dan peduli lingkungan kampus</title>
+    <meta name="description" content="Galeri kegiatan dan dokumentasi visual EcoCampus">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white overflow-x-hidden font-inter">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <a href="./index.html" class="flex items-center gap-2 sm:gap-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                    <span class="text-2xl sm:text-3xl">🌿</span>
+                    <div>
+                        <div class="text-xs text-eco-primary font-semibold">Unu Cirebon</div>
+                    </div>
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-eco-light rounded-lg transition text-eco-dark">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <div class="hidden lg:flex gap-1">
+                    <a href="./index.html" class="nav-link text-sm font-medium text-eco-dark" data-section="home">Home</a>
+                    <a href="./about.html" class="nav-link text-sm font-medium text-eco-dark" data-section="about">About</a>
+                    <a href="./articles.html" class="nav-link text-sm font-medium text-eco-dark" data-section="articles">Articles</a>
+                    <a href="./gallery.html" class="nav-link text-sm font-medium text-eco-dark" data-section="gallery">Gallery</a>
+                    <a href="./contact.html" class="nav-link text-sm font-medium text-eco-dark" data-section="contact">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 space-y-2">
+                <a href="./index.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="home">Home</a>
+                <a href="./about.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="about">About</a>
+                <a href="./articles.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="articles">Articles</a>
+                <a href="./gallery.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="gallery">Gallery</a>
+                <a href="./contact.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="py-12 sm:py-20 px-4 bg-white pt-28 container-main">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 animate-fade-in">
+                <h1 class="section-title">
+                    Galeri <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-primary to-eco-secondary">Kegiatan</span>
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="gallery-item group cursor-pointer" data-id="1">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-eco-primary hover:border-eco-secondary bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Tanam Pohon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group cursor-pointer" data-id="2">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-red-500 hover:border-red-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1532996122724-8f3c2cd83c5d?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Bebas Plastik</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group cursor-pointer" data-id="3">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-blue-500 hover:border-blue-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Workshop Daur</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group cursor-pointer" data-id="4">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-purple-500 hover:border-purple-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559305101-3a5d155dcb44?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Bersih Kampus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="text-4xl animate-float">🌿</span>
+                </div>
+                <p class="text-gray-300 max-w-md mx-auto font-medium">Wujudkan kampus hijau dan berkelanjutan untuk masa depan yang lebih baik</p>
+            </div>
+
+            <div class="border-t border-gray-700 py-6 mt-6">
+                <h3 class="text-center font-black text-white mb-4 font-poppins">Ikuti Kami</h3>
+                <div class="flex justify-center gap-6">
+                    <a href="https://instagram.com/ecocampus_unu" target="_blank" rel="noopener noreferrer" class="text-white hover:text-eco-accent transition-colors duration-300" title="Instagram">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="mailto:ecocampus@unu-cirebon.ac.id" class="text-white hover:text-eco-accent transition-colors duration-300" title="Email">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                   
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm font-semibold">
+                <p>&copy; 2025  Unu Cirebon. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scroll-to-top" class="fixed bottom-4 sm:bottom-8 right-4 sm:right-8 z-40 p-2 sm:p-3 bg-eco-primary text-white rounded-full shadow-lg hover:bg-eco-secondary transition-all duration-300 opacity-0 pointer-events-none hover:scale-110 active:scale-95">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script type="module">
+        import { setupMobileMenu, setupNavbarScroll, setActiveNavLink, setupScrollAnimations, setupResponsiveHandler, setupScrollToTop } from './js/utils.js';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            setupMobileMenu();
+            setupNavbarScroll();
+            setActiveNavLink('gallery');
+            setupScrollAnimations();
+            setupResponsiveHandler();
+            setupScrollToTop();
+        });
+    </script>
+</body>
+</html>

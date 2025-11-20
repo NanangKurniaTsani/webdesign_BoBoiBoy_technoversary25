@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact -portal edukasi dan peduli lingkungan kampus</title>
+    <meta name="description" content="Hubungi kami dan bergabung dengan EcoCampus">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white overflow-x-hidden font-inter">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <a href="./index.html" class="flex items-center gap-2 sm:gap-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                    <span class="text-2xl sm:text-3xl">🌿</span>
+                    <div>
+                        <div class="font-bold text-sm sm:text-lg text-eco-dark drop-shadow font-poppins">EcoCampus</div>
+                        <div class="text-xs text-eco-primary font-semibold">Unu Cirebon</div>
+                    </div>
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-eco-light rounded-lg transition text-eco-dark">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <div class="hidden lg:flex gap-1">
+                    <a href="./index.html" class="nav-link text-sm font-medium text-eco-dark" data-section="home">Home</a>
+                    <a href="./about.html" class="nav-link text-sm font-medium text-eco-dark" data-section="about">About</a>
+                    <a href="./articles.html" class="nav-link text-sm font-medium text-eco-dark" data-section="articles">Articles</a>
+                    <a href="./gallery.html" class="nav-link text-sm font-medium text-eco-dark" data-section="gallery">Gallery</a>
+                    <a href="./contact.html" class="nav-link text-sm font-medium text-eco-dark" data-section="contact">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 space-y-2">
+                <a href="./index.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="home">Home</a>
+                <a href="./about.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="about">About</a>
+                <a href="./articles.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="articles">Articles</a>
+                <a href="./gallery.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="gallery">Gallery</a>
+                <a href="./contact.html" class="nav-link block text-sm font-medium text-eco-dark" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-12 sm:py-20 px-4 bg-gradient-to-br from-eco-primary via-eco-secondary to-eco-accent pt-28 container-main">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 sm:mb-12 animate-fade-in">
+                <h1 class="text-3xl sm:text-5xl font-black text-white mb-4 drop-shadow-lg font-poppins">
+                    Mari <span class="text-yellow-100">Berkolaborasi</span>
+                </h1>
+                <p class="text-white/90 text-lg font-semibold drop-shadow">Bergabunglah dengan komunitas EcoCampus sekarang</p>
+            </div>
+
+            <!-- Converted ffbox classes to Tailwind grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+                    <form class="space-y-4" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="fullName" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-user mr-2 text-eco-primary"></i> Nama Lengkap:
+                            </label>
+                            <input type="text" id="fullName" name="fullName" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 font-medium" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-envelope mr-2 text-eco-primary"></i> Email:
+                            </label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 font-medium" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mobile" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-phone mr-2 text-eco-primary"></i> Nomor Telepon:
+                            </label>
+                            <input type="tel" id="mobile" name="mobile" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 font-medium">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="msg" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-comment mr-2 text-eco-primary"></i> Pesan Anda:
+                            </label>
+                            <textarea id="msg" name="msg" rows="4" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 resize-none font-medium" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-4 btn-primary justify-center text-lg hover:scale-105 border-2 border-white/50 mt-2">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="rounded-2xl overflow-hidden h-96 lg:h-auto shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!4v1763633987065!6m8!1m7!1smwiq95WvSZ3QvoJXFOZXdQ!2m2!1d-6.71427176870946!2d108.5674375390603!3f56.72655!4f0!5f0.7820865974627469" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="text-4xl animate-float">🌿</span>
+                </div>
+                <p class="text-gray-300 max-w-md mx-auto font-medium">Wujudkan kampus hijau dan berkelanjutan untuk masa depan yang lebih baik</p>
+            </div>
+
+            <div class="border-t border-gray-700 py-6 mt-6">
+                <h3 class="text-center font-black text-white mb-4 font-poppins">Ikuti Kami</h3>
+                <div class="flex justify-center gap-6">
+                    <a href="https://instagram.com/ecocampus_unu" target="_blank" rel="noopener noreferrer" class="text-white hover:text-eco-accent transition-colors duration-300" title="Instagram">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="mailto:btmfilkomunucirebon@gmail.com" class="text-white hover:text-eco-accent transition-colors duration-300" title="Email">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm font-semibold">
+                <p>&copy; 2025  Unu Cirebon. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scroll-to-top" class="fixed bottom-4 sm:bottom-8 right-4 sm:right-8 z-40 p-2 sm:p-3 bg-eco-primary text-white rounded-full shadow-lg hover:bg-eco-secondary transition-all duration-300 opacity-0 pointer-events-none hover:scale-110 active:scale-95">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script type="module">
+        import { setupMobileMenu, setupNavbarScroll, setActiveNavLink, setupScrollAnimations, setupResponsiveHandler, setupScrollToTop } from './js/utils.js';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            setupMobileMenu();
+            setupNavbarScroll();
+            setActiveNavLink('contact');
+            setupScrollAnimations();
+            setupResponsiveHandler();
+            setupScrollToTop();
+        });
+    </script>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const name = formData.get('fullName') || 'Teman';
+            const email = formData.get('email');
+            const message = formData.get('msg');
+            
+            if (!name || !email || !message) {
+                alert('Harap lengkapi semua field yang wajib diisi!');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Format email tidak valid!');
+                return;
+            }
+            
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = 'Mengirim...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert(`Terima kasih ${name}! Pesan Anda telah berhasil dikirim. Kami akan menghubungi Anda segera.`);
+                e.target.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

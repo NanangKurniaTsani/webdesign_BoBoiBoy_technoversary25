@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portal edukasi dan peduli lingkungan kampus </title>
+    <meta name="description" content="Portal edukasi dan aksi nyata untuk kampus hijau berkelanjutan">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white overflow-x-hidden font-inter">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <a href="#home" class="flex items-center gap-2 sm:gap-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                    <span class="text-2xl sm:text-3xl">🌿</span>
+                    <div>
+                        <div class="font-bold text-sm sm:text-lg text-eco-dark drop-shadow font-poppins">EcoCampus</div>
+                        <div class="text-xs text-eco-primary font-semibold">Unu Cirebon</div>
+                    </div>
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-eco-light rounded-lg transition text-eco-dark">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <div class="hidden lg:flex gap-1">
+                    <a href="#home" class="nav-link text-sm font-medium text-eco-dark" data-section="home">Home</a>
+                    <a href="#about" class="nav-link text-sm font-medium text-eco-dark" data-section="about">About</a>
+                    <a href="#articles" class="nav-link text-sm font-medium text-eco-dark" data-section="articles">Articles</a>
+                    <a href="#gallery" class="nav-link text-sm font-medium text-eco-dark" data-section="gallery">Gallery</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-eco-dark" data-section="contact">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 space-y-2">
+                <a href="#home" class="nav-link block text-sm font-medium text-eco-dark" data-section="home">Home</a>
+                <a href="#about" class="nav-link block text-sm font-medium text-eco-dark" data-section="about">About</a>
+                <a href="#articles" class="nav-link block text-sm font-medium text-eco-dark" data-section="articles">Articles</a>
+                <a href="#gallery" class="nav-link block text-sm font-medium text-eco-dark" data-section="gallery">Gallery</a>
+                <a href="#contact" class="nav-link block text-sm font-medium text-eco-dark" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="pt-20 pb-12 sm:pt-32 sm:pb-20 md:pt-40 md:pb-28 px-4 min-h-screen flex items-center relative overflow-hidden container-main">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop'); background-attachment: fixed;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-eco-dark/70 via-eco-primary/60 to-eco-accent/70 z-1"></div>
+        
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-eco-accent to-eco-primary rounded-full blur-3xl opacity-20"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-eco-primary to-eco-accent rounded-full blur-3xl opacity-20"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto w-full relative z-10 px-2 sm:px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="space-y-6 sm:space-y-8 animate-fade-in">
+                    <div class="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md border-2 border-eco-light rounded-full px-3 sm:px-4 py-2 w-fit hover:border-white hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                        <span class="w-3 h-3 bg-eco-dark rounded-full animate-pulse"></span>
+                        <span class="text-xs sm:text-sm font-bold text-eco-dark drop-shadow font-poppins truncate">Kampus Hijau Berkelanjutan</span>
+                    </div>
+
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight drop-shadow-lg animate-fade-in font-poppins text-balance">
+                            Wujudkan <br/>
+                            <span class="text-eco-light">Kampus Hijau</span>
+                        </h1>
+                        <p class="text-base sm:text-lg lg:text-xl text-white/95 leading-relaxed max-w-2xl drop-shadow-md animate-fade-in font-medium">
+                            Bergabung dengan gerakan transformasi kampus menjadi ekosistem berkelanjutan melalui edukasi, kolaborasi, dan aksi nyata.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 animate-fade-in">
+                        <a href="#about" class="btn-primary justify-center text-center">Mulai Sekarang</a>
+                        <a href="#articles" class="btn-secondary justify-center text-center border-2 border-white bg-white/20 text-white hover:bg-white/40">Baca Artikel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-12 sm:py-20 px-4 bg-gradient-to-br from-eco-light via-white to-eco-light pt-28 container-main">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 animate-fade-in">
+                <h1 class="section-title">
+                    Tentang <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-primary to-eco-secondary">EcoCampus</span>
+                </h1>
+                <p class="section-subtitle">
+                    Gerakan kolektif mahasiswa untuk menjaga lingkungan kampus berkelanjutan
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="card bg-gradient-to-br from-eco-accent to-eco-primary p-6 sm:p-8 rounded-2xl border-l-4 border-yellow-300 group cursor-pointer">
+                        <h3 class="font-black text-lg sm:text-xl text-white mb-2 drop-shadow font-poppins">Visi Kami</h3>
+                        <p class="text-white/90 text-sm sm:text-base font-medium">Menjadi pusat edukasi dan kolaborasi bagi mahasiswa untuk menjaga kelestarian lingkungan kampus.</p>
+                    </div>
+                    <div class="card bg-gradient-to-br from-eco-primary to-eco-accent p-6 sm:p-8 rounded-2xl border-l-4 border-pink-300 group cursor-pointer">
+                        <h3 class="font-black text-lg sm:text-xl text-white mb-2 drop-shadow font-poppins">Misi Kami</h3>
+                        <p class="text-white/90 text-sm sm:text-base font-medium">Meningkatkan kesadaran lingkungan, mendorong partisipasi aktif, dan menyediakan sumber belajar.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                    <div class="card bg-gradient-to-br from-orange-400 to-yellow-500 rounded-2xl p-4 sm:p-6 text-center group hover:scale-110 cursor-pointer border-2 border-white animate-fade-in">
+                        <div class="text-4xl sm:text-5xl mb-3 group-hover:scale-150 transition-transform duration-300">🌱</div>
+                        <h4 class="font-black text-white drop-shadow font-poppins">Edukasi</h4>
+                        <p class="text-xs sm:text-sm text-white/90 mt-1 font-semibold">Materi pembelajaran</p>
+                    </div>
+                    <div class="card bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl p-4 sm:p-6 text-center group hover:scale-110 cursor-pointer border-2 border-white animate-fade-in">
+                        <div class="text-4xl sm:text-5xl mb-3 group-hover:scale-150 transition-transform duration-300">🤝</div>
+                        <h4 class="font-black text-white drop-shadow font-poppins">Kolaborasi</h4>
+                        <p class="text-xs sm:text-sm text-white/90 mt-1 font-semibold">Bersama mahasiswa</p>
+                    </div>
+                    <div class="card bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl p-4 sm:p-6 text-center group hover:scale-110 cursor-pointer border-2 border-white animate-fade-in">
+                        <div class="text-4xl sm:text-5xl mb-3 group-hover:scale-150 transition-transform duration-300">⭐</div>
+                        <h4 class="font-black text-white drop-shadow font-poppins">Aksi</h4>
+                        <p class="text-xs sm:text-sm text-white/90 mt-1 font-semibold">Kegiatan nyata</p>
+                    </div>
+                    <div class="card bg-gradient-to-br from-purple-400 to-indigo-500 rounded-2xl p-4 sm:p-6 text-center group hover:scale-110 cursor-pointer border-2 border-white animate-fade-in">
+                        <div class="text-4xl sm:text-5xl mb-3 group-hover:scale-150 transition-transform duration-300">🌍</div>
+                        <h4 class="font-black text-white drop-shadow font-poppins">Dampak</h4>
+                        <p class="text-xs sm:text-sm text-white/90 mt-1 font-semibold">Lingkungan berkelanjutan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLES SECTION -->
+    <section id="articles" class="py-12 sm:py-20 px-4 bg-gray-50 container-main">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 animate-fade-in">
+                <h1 class="section-title">
+                    Artikel <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-primary to-eco-secondary">Edukatif</span>
+                </h1>
+                <p class="section-subtitle">
+                    Temukan wawasan dan panduan praktis untuk menerapkan gaya hidup berkelanjutan
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <article class="article-card group cursor-pointer" data-id="1" data-modal="article">
+                    <div class="card border-2 border-eco-primary hover:border-eco-secondary h-full flex flex-col">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1629771298882-4d23fef1fa7d?w=400&h=300&fit=crop');"></div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="inline-block bg-eco-primary text-white text-xs font-black px-3 py-1 rounded-full mb-3 w-fit">EDUKASI</div>
+                            <h3 class="text-lg sm:text-xl font-black text-eco-dark mb-3 flex-1 font-poppins">Sistem Pengelolaan Sampah</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">Pelajari sistem 3R dan pemilahan sampah efektif untuk mengurangi limbah kampus.</p>
+                            <div class="mt-auto text-eco-primary font-black text-sm group-hover:text-eco-secondary transition-colors duration-300">Baca Selengkapnya →</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card group cursor-pointer" data-id="2" data-modal="article">
+                    <div class="card border-2 border-blue-500 hover:border-blue-600 h-full flex flex-col">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1533456558-afd51e7ca1d7?w=400&h=300&fit=crop');"></div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="inline-block bg-blue-600 text-white text-xs font-black px-3 py-1 rounded-full mb-3 w-fit">ENERGI</div>
+                            <h3 class="text-lg sm:text-xl font-black text-eco-dark mb-3 flex-1 font-poppins">Efisiensi Energi Gedung</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">Strategi penghematan energi listrik melalui pencahayaan alami dan manajemen AC pintar.</p>
+                            <div class="mt-auto text-blue-600 font-black text-sm group-hover:text-blue-700 transition-colors duration-300">Baca Selengkapnya →</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card group cursor-pointer" data-id="3" data-modal="article">
+                    <div class="card border-2 border-purple-500 hover:border-purple-600 h-full flex flex-col">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1553456558-afd51e7ca1d7?w=400&h=300&fit=crop');"></div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="inline-block bg-purple-600 text-white text-xs font-black px-3 py-1 rounded-full mb-3 w-fit">KREATIF</div>
+                            <h3 class="text-lg sm:text-xl font-black text-eco-dark mb-3 flex-1 font-poppins">Seni Daur Ulang Plastik</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">Ubah limbah plastik menjadi karya seni bernilai tinggi melalui kreativitas mahasiswa.</p>
+                            <div class="mt-auto text-purple-600 font-black text-sm group-hover:text-purple-700 transition-colors duration-300">Baca Selengkapnya →</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-12 sm:py-20 px-4 bg-white container-main">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 animate-fade-in">
+                <h1 class="section-title">
+                    Galeri <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-primary to-eco-secondary">Kegiatan</span>
+                </h1>
+        
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="gallery-item group cursor-pointer" data-id="1" data-modal="gallery">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-eco-primary hover:border-eco-secondary bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Tanam Pohon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group cursor-pointer" data-id="2" data-modal="gallery">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-red-500 hover:border-red-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1532996122724-8f3c28902d4a?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Bebas Plastik</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group cursor-pointer" data-id="3" data-modal="gallery">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-blue-500 hover:border-blue-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=400&fit=crop');">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
+                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Workshop Daur</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-12 sm:py-20 px-4 bg-gradient-to-br from-eco-primary via-eco-secondary to-eco-accent container-main">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 sm:mb-12 animate-fade-in">
+                <h1 class="text-3xl sm:text-5xl font-black text-white mb-4 drop-shadow-lg font-poppins">
+                    Mari <span class="text-yellow-100">Berkolaborasi</span>
+                </h1>
+                <p class="text-white/90 text-lg font-semibold drop-shadow">Bergabunglah dengan komunitas  sekarang</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+                    <form class="space-y-4" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="fullName" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-user mr-2 text-eco-primary"></i> Nama Lengkap:
+                            </label>
+                            <input type="text" id="fullName" name="fullName" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 font-medium" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-envelope mr-2 text-eco-primary"></i> Email:
+                            </label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 font-medium" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mobile" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-phone mr-2 text-eco-primary"></i> Nomor Telepon:
+                            </label>
+                            <input type="tel" id="mobile" name="mobile" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 font-medium">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="msg" class="text-gray-700 font-semibold text-sm">
+                                <i class="fas fa-comment mr-2 text-eco-primary"></i> Pesan Anda:
+                            </label>
+                            <textarea id="msg" name="msg" rows="4" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-eco-primary focus:border-eco-primary outline-none transition-all duration-300 resize-none font-medium" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-4 btn-primary justify-center text-lg hover:scale-105 border-2 border-white/50 mt-2">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="rounded-2xl overflow-hidden h-96 lg:h-auto shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!4v1763633987065!6m8!1m7!1smwiq95WvSZ3QvoJXFOZXdQ!2m2!1d-6.71427176870946!2d108.5674375390603!3f56.72655!4f0!5f0.7820865974627469" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Improved Article Modal with proper structure and styling -->
+    <div id="article-modal" class="modal">
+        <div class="modal-backdrop" onclick="closeArticleModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="text-xl sm:text-2xl font-black text-eco-dark font-poppins">Judul Artikel</h2>
+                <span class="modal-close" onclick="closeArticleModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modal-image" class="w-full h-48 sm:h-64 bg-cover bg-center rounded-xl mb-6 shadow-md"></div>
+                <div id="modal-content" class="text-gray-700 text-sm sm:text-base leading-relaxed font-medium space-y-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Improved Gallery Modal with proper structure and styling -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-backdrop" onclick="closeGalleryModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="gallery-modal-title" class="text-xl sm:text-2xl font-black text-eco-dark font-poppins">Judul Galeri</h2>
+                <span class="modal-close" onclick="closeGalleryModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="gallery-modal-image" class="w-full h-64 sm:h-80 bg-cover bg-center rounded-xl mb-6 shadow-md"></div>
+                <div id="gallery-modal-description" class="text-gray-700 text-sm sm:text-base leading-relaxed font-medium"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-gradient-to-r from-eco-dark via-eco-dark to-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="text-4xl animate-float">🌿</span>
+                    <span class="font-black text-2xl drop-shadow-lg font-poppins">EcoCampus</span>
+                </div>
+                <p class="text-gray-300 max-w-md mx-auto font-medium">Wujudkan kampus hijau dan berkelanjutan untuk masa depan yang lebih baik</p>
+            </div>
+
+            <div class="border-t border-gray-700 py-6 mt-6">
+                <h3 class="text-center font-black text-white mb-4 font-poppins">Ikuti Kami</h3>
+                <div class="flex justify-center gap-6">
+                    <a href="https://www.instagram.com/btmfilkomunuc_?igsh=MXNxeXgwbHk3N3ByNA==" target="_blank" rel="noopener noreferrer" class="text-white hover:text-eco-accent transition-colors duration-300" title="Instagram">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="mailto:btmfilkomunucirebon@gmail.com" class="text-white hover:text-eco-accent transition-colors duration-300" title="Email">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm font-semibold">
+                <p>&copy; 2025  Unu Cirebon. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scroll-to-top" class="fixed bottom-4 sm:bottom-8 right-4 sm:right-8 z-40 p-2 sm:p-3 bg-eco-primary text-white rounded-full shadow-lg hover:bg-eco-secondary transition-all duration-300 opacity-0 pointer-events-none hover:scale-110 active:scale-95">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script type="module">
+        import { setupMobileMenu, setupNavbarScroll, setupScrollAnimations, setupResponsiveHandler, setupScrollToTop, setupSmoothScroll, setupSectionDetection, setupModalHandlers } from './js/utils.js';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            setupMobileMenu();
+            setupNavbarScroll();
+            setupScrollAnimations();
+            setupResponsiveHandler();
+            setupScrollToTop();
+            setupSmoothScroll();
+            setupSectionDetection();
+            setupModalHandlers();
+        });
+    </script>
+
+    <script>
+        // Article modal data with full descriptions
+        const articleData = {
+            1: {
+                title: 'Sistem Pengelolaan Sampah',
+                image: 'https://images.unsplash.com/photo-1629771298882-4d23fef1fa7d?w=600&h=400&fit=crop',
+                date: '15 November 2024',
+                category: 'Edukasi',
+                content: 'Pengelolaan sampah yang efektif adalah kunci untuk menciptakan kampus yang berkelanjutan. Sistem 3R (Reduce, Reuse, Recycle) telah terbukti dapat mengurangi volume sampah hingga 70%. Dengan pemilahan sampah yang tepat sejak dari sumber, kita dapat memaksimalkan daur ulang dan meminimalkan sampah ke tempat pembuangan akhir. Bergabunglah dengan program pemilahan sampah kami dan jadilah bagian dari solusi lingkungan kampus. Program ini telah membantu mengurangi sampah organik sebanyak 500kg setiap bulannya.'
+            },
+            2: {
+                title: 'Efisiensi Energi Gedung',
+                image: 'https://images.unsplash.com/photo-1533456558-afd51e7ca1d7?w=600&h=400&fit=crop',
+                date: '10 November 2024',
+                category: 'Energi',
+                content: 'Penghematan energi di gedung kampus dapat mencapai 30-40% melalui strategi manajemen yang tepat. Penggunaan pencahayaan alami, sensor gerak untuk lampu, dan pengelolaan AC yang bijaksana dapat secara signifikan mengurangi konsumsi listrik. Mahasiswa dapat berkontribusi dengan menjadi duta hemat energi di gedung dan laboratorium mereka masing-masing. Melalui edukasi tentang penggunaan energi terbarukan seperti solar panel, kampus kami berkomitmen mencapai carbon neutral pada tahun 2030.'
+            },
+            3: {
+                title: 'Seni Daur Ulang Plastik',
+                image: 'https://images.unsplash.com/photo-1553456558-afd51e7ca1d7?w=600&h=400&fit=crop',
+                date: '5 November 2024',
+                category: 'Kreatif',
+                content: 'Limbah plastik dapat diubah menjadi karya seni yang menakjubkan dan bernilai tinggi. Melalui workshop daur ulang kreatif, mahasiswa belajar mengubah botol plastik, tas plastik, dan limbah plastik lainnya menjadi dekorasi, kerajinan tangan, dan produk bermanfaat. Ini bukan hanya solusi lingkungan tetapi juga pengembangan kreativitas dan keterampilan mahasiswa. Hasil karya dapat dipamerkan dan dijual untuk mendukung program keberlanjutan kampus lebih lanjut.'
+            }
+        };
+
+        // Gallery modal data dengan narasi lingkungan yang detail
+        const galleryData = {
+            1: {
+                title: 'Program Tanam Pohon',
+                image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=600&fit=crop',
+                description: 'Program tanam pohon EcoCampus bertujuan meningkatkan penghijauan kampus dan mengurangi suhu lingkungan. Setiap semester, mahasiswa bersama-sama menanam ratusan pohon di area kampus yang telah diidentifikasi. Kegiatan ini tidak hanya meningkatkan kualitas udara tetapi juga menciptakan ruang hijau yang nyaman untuk belajar. Melalui program ini, kami telah menanam lebih dari 2000 pohon dalam 2 tahun terakhir yang telah menyerap ribuan ton CO2.'
+            },
+            2: {
+                title: 'Kampanye Bebas Plastik',
+                image: 'https://images.unsplash.com/photo-1532996122724-8f3c2cd83c5d?w=600&h=600&fit=crop',
+                description: 'Kampanye bebas plastik kami mengajak seluruh civitas akademika untuk mengurangi penggunaan plastik sekali pakai. Kami menyediakan botol air reusable dan tas belanja kain kepada mahasiswa untuk mengganti kemasan plastik. Kantin kampus juga telah beralih ke kemasan ramah lingkungan yang dapat didaur ulang. Kampanye ini telah berhasil mengurangi penggunaan plastik sekali pakai hingga 60% di area kampus.'
+            },
+            3: {
+                title: 'Workshop Daur Ulang',
+                image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=600&fit=crop',
+                description: 'Workshop daur ulang adalah serangkaian pelatihan interaktif yang mengajarkan mahasiswa cara mengubah limbah menjadi produk bernilai. Dari botol plastik menjadi pot tanaman, hingga kain bekas menjadi tas fashion. Para peserta tidak hanya belajar teknik daur ulang tetapi juga memahami pentingnya ekonomi sirkular. Setiap bulan kami mengadakan workshop dengan peserta rata-rata 50-100 mahasiswa dari berbagai fakultas.'
+            }
+        };
+
+        function openArticleModal(id) {
+            const data = articleData[id];
+            if (!data) return;
+            
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-image').style.backgroundImage = `url('${data.image}')`;
+            
+            const contentHTML = `
+                <div class="flex gap-3 flex-wrap mb-4">
+                    <span class="inline-block bg-eco-primary text-white text-xs font-black px-3 py-1 rounded-full">${data.category}</span>
+                    <span class="text-gray-500 text-xs font-semibold flex items-center gap-1"><i class="fas fa-calendar"></i> ${data.date}</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed">${data.content}</p>
+            `;
+            document.getElementById('modal-content').innerHTML = contentHTML;
+            document.getElementById('article-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeArticleModal() {
+            document.getElementById('article-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function openGalleryModal(id) {
+            const data = galleryData[id];
+            if (!data) return;
+            
+            document.getElementById('gallery-modal-title').textContent = data.title;
+            document.getElementById('gallery-modal-image').style.backgroundImage = `url('${data.image}')`;
+            document.getElementById('gallery-modal-description').textContent = data.description;
+            document.getElementById('gallery-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGalleryModal() {
+            document.getElementById('gallery-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeArticleModal();
+                closeGalleryModal();
+            }
+        });
+    </script>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const name = formData.get('fullName') || 'Teman';
+            const email = formData.get('email');
+            const message = formData.get('msg');
+            
+            if (!name || !email || !message) {
+                alert('Harap lengkapi semua field yang wajib diisi!');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Format email tidak valid!');
+                return;
+            }
+            
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = 'Mengirim...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert(`Terima kasih ${name}! Pesan Anda telah berhasil dikirim. Kami akan menghubungi Anda segera.`);
+                e.target.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
