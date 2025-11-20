@@ -44,3 +44,4 @@ package.json
 postcss.config.js
 Readme.md
 tailwind.config.js
+vercel.json
