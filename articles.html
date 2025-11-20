@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery -portal edukasi dan peduli lingkungan kampus</title>
-    <meta name="description" content="Galeri kegiatan dan dokumentasi visual EcoCampus">
-    <link href="dist/output.css" rel="stylesheet">
+    <title>Articles -Portal edukasi dan peduli lingkungan kampus</title>
+    <meta name="description" content="Baca artikel edukatif tentang keberlanjutan lingkungan">
+    <link href="./dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -48,47 +48,54 @@
         </div>
     </nav>
 
-    <!-- Gallery Section -->
-    <section class="py-12 sm:py-20 px-4 bg-white pt-28 container-main">
+    <!-- Articles Section -->
+    <section class="py-12 sm:py-20 px-4 bg-gray-50 pt-28 container-main">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12 sm:mb-16 animate-fade-in">
                 <h1 class="section-title">
-                    Galeri <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-primary to-eco-secondary">Kegiatan</span>
+                    Artikel <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-primary to-eco-secondary">Edukatif</span>
                 </h1>
+                <p class="section-subtitle">
+                    Temukan wawasan dan panduan praktis untuk menerapkan gaya hidup berkelanjutan
+                </p>
             </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                <div class="gallery-item group cursor-pointer" data-id="1">
-                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-eco-primary hover:border-eco-secondary bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop');">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
-                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Tanam Pohon</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <article class="article-card group cursor-pointer" data-id="1">
+                    <div class="card border-2 border-eco-primary hover:border-eco-secondary h-full flex flex-col">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1629771298882-4d23fef1fa7d?w=400&h=300&fit=crop');"></div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="inline-block bg-eco-primary text-white text-xs font-black px-3 py-1 rounded-full mb-3 w-fit">EDUKASI</div>
+                            <h3 class="text-lg sm:text-xl font-black text-eco-dark mb-3 flex-1 font-poppins">Sistem Pengelolaan Sampah</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">Pelajari sistem 3R dan pemilahan sampah efektif untuk mengurangi limbah kampus.</p>
+                            <div class="mt-auto text-eco-primary font-black text-sm group-hover:text-eco-secondary transition-colors duration-300">Baca Selengkapnya →</div>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="gallery-item group cursor-pointer" data-id="2">
-                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-red-500 hover:border-red-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1532996122724-8f3c2cd83c5d?w=400&h=400&fit=crop');">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
-                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Bebas Plastik</div>
+                <article class="article-card group cursor-pointer" data-id="2">
+                    <div class="card border-2 border-blue-500 hover:border-blue-600 h-full flex flex-col">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1533456558-afd51e7ca1d7?w=400&h=300&fit=crop');"></div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="inline-block bg-blue-600 text-white text-xs font-black px-3 py-1 rounded-full mb-3 w-fit">ENERGI</div>
+                            <h3 class="text-lg sm:text-xl font-black text-eco-dark mb-3 flex-1 font-poppins">Efisiensi Energi Gedung</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">Strategi penghematan energi listrik melalui pencahayaan alami dan manajemen AC pintar.</p>
+                            <div class="mt-auto text-blue-600 font-black text-sm group-hover:text-blue-700 transition-colors duration-300">Baca Selengkapnya →</div>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="gallery-item group cursor-pointer" data-id="3">
-                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-blue-500 hover:border-blue-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=400&fit=crop');">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
-                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Workshop Daur</div>
+                <article class="article-card group cursor-pointer" data-id="3">
+                    <div class="card border-2 border-purple-500 hover:border-purple-600 h-full flex flex-col">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1553456558-afd51e7ca1d7?w=400&h=300&fit=crop');"></div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="inline-block bg-purple-600 text-white text-xs font-black px-3 py-1 rounded-full mb-3 w-fit">KREATIF</div>
+                            <h3 class="text-lg sm:text-xl font-black text-eco-dark mb-3 flex-1 font-poppins">Seni Daur Ulang Plastik</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">Ubah limbah plastik menjadi karya seni bernilai tinggi melalui kreativitas mahasiswa.</p>
+                            <div class="mt-auto text-purple-600 font-black text-sm group-hover:text-purple-700 transition-colors duration-300">Baca Selengkapnya →</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="gallery-item group cursor-pointer" data-id="4">
-                    <div class="relative overflow-hidden rounded-2xl aspect-square hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 animate-fade-in border-2 border-purple-500 hover:border-purple-600 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559305101-3a5d155dcb44?w=400&h=400&fit=crop');">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end justify-start p-4">
-                            <div class="text-white text-sm font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg">Bersih Kampus</div>
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -112,7 +119,9 @@
                     <a href="mailto:ecocampus@unu-cirebon.ac.id" class="text-white hover:text-eco-accent transition-colors duration-300" title="Email">
                         <i class="fas fa-envelope text-2xl"></i>
                     </a>
-                   
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-eco-accent transition-colors duration-300" title="Facebook">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
                 </div>
             </div>
 
@@ -135,7 +144,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             setupMobileMenu();
             setupNavbarScroll();
-            setActiveNavLink('gallery');
+            setActiveNavLink('articles');
             setupScrollAnimations();
             setupResponsiveHandler();
             setupScrollToTop();
